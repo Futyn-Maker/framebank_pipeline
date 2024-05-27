@@ -1,0 +1,168 @@
+Input:
+LUs: зафрахтовать > нанимать > арендовать
+LUs Definitions: - > - > А1 арендовал А2 у А3 за А4 на А5 ‘Лицо А1 приобрело право на использование собственности А2 лица А3 в течение длительного времени А5, заплатив за это лицу А3 сумму  А4’ [А2 обычно недвижимость или транспортное средство].  Расширенные употребления применительно к спортсменам в  роли А2: арендовать футболиста <хоккеиста> у испанского  клуба.
+Example: Институт арендовал помещение клуба у завода.
+FN Name: Renting
+FN Core FEs: Lessee > Goods
+FN Definition: A [FE1:Lessee] gains the use of [FE2:Goods] owned by a Lessor by payment to the Lessor.
+FN Core FEs definitions: The individual that gains temporary use of the [FE2:Goods] by paying the Lessor > The FE [FE2:Goods] is an item which is temporarily exchanged for Money in a transaction.
+
+Output:
+Frame: Аренда
+Core FEs: Арендатор > Товар > Арендодатель
+Frame Definition: [FE1:Арендатор] получает временное право пользования [FE2:Товаром], который принадлежит [FE3:Арендодателю], заплатив [FE3:Арендодателю].
+Core FEs definitions: Индивид, получающий право на временное пользование[FE2:Товаром] путём оплаты [FE3:Арендодателю] > Объект, который в обмен на деньги временно получает [FE1:Арендатор] > Индивид, обладающий постоянным правом собственности на [FE2:Товар] и разрешающее его временное использование [FE1:Арендатором]
+Labeled example: [FE1:Арендатор Институт] [Frame:Аренда арендовал] [FE2:Товар помещение клуба] [FE3:Арендодатель у завода].
+
+
+Input:
+LUs: хотеть > надеяться > желать > жаждать
+LUs Definitions: - > - > А1 желает А2 ‘Человек А1 хочет, чтобы имела  место важная для него или необычная ситуация А2’.   1.  Этот  глагол  имеет  два  основных  круга  употреблений.  Первый  круг,  в  котором  он  стилистически,  семантически  и  прагматически  нейтрален,  представлен  отрицательными  предложениями, неличными формами ИНФ, ПРИЧ и ДЕЕПР,  а также личными формами СОВ: Меня в сумасшедшие вырядили, никто не желает меня слушать (М. Булгаков); Сознательно желать уснуть – верная бессонница (Б. Пастернак);  Издание  рассчитано  на  школьников,  желающих  расширить  и углубить свои знания (В. Лукашик, Е. Иванова); «Профессиональный» читатель, желая составить собственное мнение  по  спорному  вопросу,  отправляется  к  первоисточникам  (А. Носик); Он не пожелал вступать в диалог с местным деловым  сообществом  (Л.  Опель).  Второй  круг  употреблений  представлен личными формами НЕСОВ НАСТ в утвердительных и вопросительных предложениях. В нем желать 1 либо  нарративен,  либо  официален,  либо  приобретает  обиходный  или даже просторечный оттенок. Нарративные употребления:  Супруга желает расторгнуть брак; Дети желают остаться  с отцом; Петр Петрович желал показать себя перед товарищем радушным, щедрым, богатым (И. Бунин). Официальные  употребления: Итак, прокуратор желает знать, кого из двух  преступников намерен освободить синедрион (М. Булгаков).  Обиходные и просторечные употребления – они особенно характерны для ситуаций, связанных с оказанием услуг и вообще со сферой обслуживания: Желаю гулять до утра; – Вы при  школе живете? – При школе. – Провожу, желаете? (Ю. Казаков); Не желаете отведать баварского, сорок второго года  розлива, с притертой фарфоровой пробочкой? (М. Карпов). 2.  Метонимические  употребления  применительно  к  невидимым органам человека в роли А1: Сделай так, как твоя душа  пожелает;  Мое  сознание  нипочем  не  желало  переваривать  эту информацию (В. Белоусова). 3.  Метонимические  употребления  применительно  к  питью  и еде в роли А2, обычно в вопросе: Желаете водочки <кофейку>?;  Желаете  соленых  огурчиков?;  Севастьянов  не  торопясь, […] надел свежую рубашку, убрал в чемодан дорожные  вещи. – Не желаете чаю? – тихим голосом спросил, заглянув  к нему, проводник (В. Панова). 4. Образные употребления применительно  к сферам творческой  деятельности  в  роли  А1:  Группа  изрядно  поднаторела  в изготовлении музыки, которая […] категорически не желала иметь ничего общего с реальностью (А. Мунипов); Наука,  желая  разрешить  вопросы,  […]  вместо  ответа  повторила  мне слова вопроса (Л. Н. Толстой). 5.  Образные  употребления  в  отрицательных  предложениях  применительно  к  артефактам, не  выполняющим  свою  функцию: Гвоздь не желал лезть в стену; Замо́к не желал открываться. > -
+Example: Мы непременно хотим попасть на выставку.
+FN Name: Desiring
+FN Core FEs: Experiencer > Event > Focal_participant > Location_of_event
+FN Definition: An [FE1:Experiencer] desires that an [FE2:Event] occur.  (Note that commonly a resultant state of the [FE2:Event] will stand in for the [FE2:Event].)  In some cases, the [FE1:Experiencer] is an active participant in the [FE2:Event], and in such cases the [FE2:Event] itself is often not mentioned, but rather some [FE3:Focal_participant] which is subordinately involved in the [FE2:Event]. Generally, the use of a word in this frame implies that the specific [FE2:Event] has not yet happened, but that the [FE1:Experiencer] believes that they would be happier if it did.  Sometimes the Time_of_event, Purpose_of_event, or the [FE4:Location_of_event] are mentioned without the explicit mention of the [FE2:Event].
+FN Core FEs definitions: The [FE1:Experiencer] is the person (or sentient being) who wishes for the [FE2:Event] to occur. > The change that the [FE1:Experiencer] would like to see. > This is the entity that the [FE1:Experiencer] wishes to be affected by some [FE2:Event]. > The [FE4:Location_of_event] is the place involved in the desired [FE2:Event].
+
+Output:
+Frame: Желание
+Core FEs: Экспериенцер > Событие
+Frame Definition: [FE1:Экспериенцер] хочет, чтобы произошло некоторое [FE2:Событие] (часто само [FE2:Событие] заменяется его результирующим состоянием). Как правило, использование слова из этого фрейма подразумевает, что [FE2:Событие] ещё не произошло, но [FE1:Экспериенцер] считает, что был бы счастливее, если бы оно произошло.
+Core FEs definitions: Человек или другое разумное существо, заинтересованное в наступлении [FE2:События] > Изменение, которое [FE1:Экспериенцер] хотел бы видеть
+Labeled example: [FE1:Экспериенцер Мы] непременно [Frame:Желание хотим] [FE2:Событие попасть на выставку].
+
+
+Input:
+LUs: осуждать > обвинять > одобрять > аплодировать > восхищаться
+LUs Definitions: - > - > - > А1 аплодирует А2 за А3 ‘Люди или человек А1,  являющиеся зрителями или слушателями человека или людей  А2, ритмически ударяют ладонью о ладонь, производя громкие  звуки как символический знак того, что А3, которое делает  или сделал А2, доставило им удовольствие’.  1. Метонимические употребления применительно к свойствам человека или продуктам его деятельности в роли А2:  аплодировать чьей-л. находчивости <решению присяжных>;  Этому фильму аплодировали в Каннах; Мы аплодировали Ладошникову, его проекту, его упорству и успеху, аплодировали  его Руководителю – нашему учителю Жуковскому (А. Бек). 2. Расширенные употребления применительно к любым значительным по масштабу объектам и ситуациям, по поводу  которых люди испытывают сильные положительные эмоции:  аплодировать дождю; Все пассажиры аплодировали экипажу  [обычно при мягкой посадке самолета или при посадке в трудных условиях]; Вечером, когда солнце такое большое красное,  опускалось над лесами [...] и рыжие стволы сосен на холме  стали огненными, аббат вдруг захлопал в ладоши, аббат был  в восторге, он аплодировал солнцу (М. Пришвин); В зале еще  ничего не поняли, еще дети восторженно аплодировали самому факту появления льва (А. Инин). > А1 восхищается А2 ‘Человек А1 испытывает и,  возможно, выражает словами А3 сильное и приятное чувство,  вызванное объектом или ситуацией А2, которые он очень высоко оценивает’.  В форме СОВ часто указывает на словесное проявление эмоции: Ты без пальто? – восхитился Гриша (Л. Улицкая); – Вот  это начало! – восхитился капитан (И. Грекова).
+Example: Зал аплодировал докладчику.
+FN Name: Judgment
+FN Core FEs: Cognizer > Evaluee > Reason > Expressor                                                                    
+FN Definition: A [FE1:Cognizer] makes a judgment about an [FE2:Evaluee]. The judgment may be positive (e.g. respect) or negative (e.g. condemn), and this information is recorded in the semantic types Positive and Negative on the Lexical Units of this frame. There may be a specific [FE3:Reason] for the [FE1:Cognizer]'s judgment, or there may be a capacity or Role in which the [FE2:Evaluee] is judged. This frame is distinct from the Judgment_communication frame in that this frame does not involve the Cognizer communicating his or her judgment to an Addressee. Currently, however, some lexical units and annotation for both remain in this frame.
+FN Core FEs definitions: The [FE1:Cognizer] makes the judgment. This role is typically expressed as the External Argument (or in a by-PP in passives). > Evaluee is the person or thing about whom/which a judgment is made. With verbs this FE is typically expressed as Object > Typically, there is a constituent expressing the Reason for the Judge's judgment. It is usually a for-PP, e.g. > [FE4:Expressor] is the body part or action by a body part that conveys the judgment made by the [FE1:Cognizer].                                                                             
+
+Output:
+Frame: Выражение оценки
+Core FEs: Оценивающий > Объект оценивания
+Frame Definition: [FE1:Оценивающий] даёт оценку [FE2:Объекту_оценивания]. Оценка может быть как положительной, так и отрицательной.
+Core FEs definitions: Индивид, дающий оценку > Объект, которому даётся оценка
+Labeled example: [FE1:Оценивающий Зал] [Frame:Выражение_оценки аплодировал] [FE2:Объект_оценивания докладчику].
+
+
+Input:
+LUs: задержать > арестовать
+LUs Definitions: А1 задержал А2 за А3 в А4 на А5 ‘Официальное  лицо А1, войдя в контакт с человеком А2 в месте А4, ограничило его свободу на время А5, считая, что А2 совершил незаконное действие А3’.   Расширенные  употребления  применительно  к  незаконно  перевозимым товарам в роли А2: Таня раза четыре подходила к барьеру. Передавала мне вещи, задержанные таможней  (С. Довлатов). > А1 арестовал А2 за А3 на А4 ‘Орган власти А1  или представитель А1 такого органа официально лишил человека А2 свободы на время А4 за поступок А3, который является нарушением какого-то закона, или по подозрению в  совершении такого поступка’.
+Example: Земский начальник арестовал приезжего студента за непочтение.
+FN Name: Arrest
+FN Core FEs: Charges > Authorities > Suspect > Offense
+FN Definition: [FE2:Authorities] charge a [FE3:Suspect], who is under suspicion of having committed a crime (the [FE1:Charges]), and take him/her into custody.
+FN Core FEs definitions: [FE1:Charges] identifies a category within the legal system; it is the crime with which the [FE3:Suspect] is charged. > The [FE2:Authorities] charge the [FE3:Suspect] with commiting a crime, and take him/her into custody. > The [FE3:Suspect] is taken into custody, under suspicion of having committed a crime. > [FE4:Offense] identifies the ordinary language use of the reason for which a [FE3:Suspect] is arrested.
+
+Output:
+Frame: Арест
+Core FEs: Представитель властей > Обвинение > Подозреваемый
+Frame Definition: [FE1:Представитель_властей] предъявляет [FE2:Обвинение] [FE3:Подозреваемому] и заключает его под стражу.
+Core FEs definitions: Лицо, предъявляющее [FE2:Обвинение] [FE3:Подозреваемому] и заключающее [FE3:Подозреваемого] под стражу > Преступление, в котором обвиняется [FE3:Подозреваемый] > Лицо, которое заключают под стражу по подозрению в совершении преступления
+Labeled example: [FE1:Представитель_властей Земский начальник] [Frame:Арест арестовал] [FE3:Подозреваемый приезжего студента] [FE2:Обвинение за непочтение].
+
+
+Input:
+LUs: болтать > трепаться > беседовать
+LUs Definitions: А1 с А2 об А3 ‘Люди А1 и А2 оживленно и непринужденно говорят в течение некоторого времени, на интересную для них и не очень серьезную тему А3, как правило,  получая от этого удовольствие; говорящий может оценивать  это отрицательно’.  Образные употребления применительно к птицам, которые издают частые немелодичные звуки: Галки, болтая, усаживались  на решетчатые колпаки на трубах нового дома (И. А. Бунин). > - > А1 беседует с А2 об А3 ‘Человек А1 и человек  А2 не торопясь разговаривают в течение некоторого времени,  обмениваясь сведениями или мнениями на интересную для  них тему А3, как правило, серьезно относясь к этому и получая от этого удовольствие’.  1. Расширенные употребления в значении ‘в развернутой  форме сообщать определенной аудитории информацию на  какую-либо тему’: Каждый год декан психологического факультета беседует с будущими абитуриентами об особенностях требований на вступительных экзаменах. 2. Суженные употребления в значении ‘проводить интервью’:  О непростом отношении россиян к олигархам мы беседуем с  ведущим научным сотрудником Института социологии
+Example: Расположившись в холодке, гости тихо беседовали.
+FN Name: Chatting
+FN Core FEs: Interlocutors > Interlocutor_1 > Interlocutor_2
+FN Definition: A group of people (the [FE1:Interlocutors] or [FE2:Interlocutor_1] and [FE3:Interlocutor_2] together) have a conversation.  No person is construed as only a speaker or only an addressee. Rather, it is understood that both (or all) participants do some speaking and some listening--the process is understood to be symmetrical or reciprocal.  In this frame, the purpose of the conversation is generally social, rather than specifically to decide something or exchange information, or to quarrel (see Discussion and Quarreling).
+FN Core FEs definitions: The group of individuals involved in chatting. > The individual or individuals that form the more prominent (i.e. agentive) party of a conversation, as compared with [FE3:Interlocutor_2]. That is, [FE2:Interlocutor_1] is generally encoded as the External Argument of verbs, and peripheral FEs that do not make reference to the event itself generally make reference to [FE2:Interlocutor_1]. Thus a Purpose (or Means, Depictive, or Manner) is construed to be that of [FE2:Interlocutor_1], not necessarily that of [FE3:Interlocutor_2] or the group of [FE1:Interlocutors] as a whole. > The semantically (and grammatically) less prominent group of participants in a conversation.  It is generally encoded within a prepositional phrase (e.g. headed by with).
+
+Output:
+Frame: Беседа
+Core FEs: Собеседники > Собеседник 1 > Собеседник 2
+Frame Definition: Группа людей ([FE1:Собеседники] или [FE2:Собеседник_1] и [FE3:Собеседник_2]) ведут беседу. Не существует единственного говорящего или адресата - процесс симметричный.
+Core FEs definitions: Группа людей, участвующих в беседе > Человек или люди, которые образуют более заметную, агентивную сторону беседы по сравнением с [FE3:Собеседником_2] > Человек или люди, которые образуют менее заметную (семантически и грамматически менее выраженную) сторону беседы по сравнению с [FE2:Собеседником_1]
+Labeled example: Расположившись в холодке, [FE1:Собеседники гости] тихо [Frame:Беседа беседовали].
+
+
+Input:
+LUs: восставать > бунтовать
+LUs Definitions: А1 восстал против А2 ‘Люди А1 начали вооруженную борьбу с лицом А2, под властью которого они находятся’.  1. Расширенные употребления: И восстал сын на отца и  брат на брата. 2. Образные употребления: Так пусть же сама земля [...] восстанет против врага, сгубит его или изгонит прочь (А. Иванов). > А1 бунтует против А2 ‘Люди А1, принадлежащие  к низшим слоям общества и недовольные своим социальным  положением, объединившись, вооруженным путем пытаются  добиться изменения существующих порядков или лишения  власти лица А2, ответственного за эти порядки’.  1. Ослабленные употребления применительно к протесту  одного человека против заведенного порядка или традиционных ценностей: Вот ты бунтуешь, из института ушел – а  на чьи деньги живешь? (А. Арбузов); Он был футуристом, он  бунтовал и свергал кумиров (Ю. Олеша); Почему Живаго не  выносил избитости советских идей, но не бунтовал раньше  против пошлости идей его круга до революции? (З. Масленикова). 2. Образные употребления применительно к внутреннему протесту: Он что-то говорил, но она слышала только его виноватый, даже чуточку заискивающий голос, и в ней уже бунтовало что-то злое и гордое (Б. Васильев).
+Example: Матросы бунтовали против командиров.
+FN Name: Rebellion
+FN Core FEs: Rebel > Current_leadership > Current_order
+FN Definition: An individual or group, the [FE1:Rebel], rejects the authority of the [FE2:Current_leadership], and attempts to bring them out of power. The rebellion may, but need not be violent. Rather than expressing rebellion against the [FE2:Current_leadership], the lexical units in this frame may appear with expressions describing the [FE3:Current_order], the system of rule which the [FE1:Rebels] reject.
+FN Core FEs definitions: The individual or group within a society that attempts to overturn the [FE2:Current_leadership], and possibly also the [FE3:Current_order] of governance. > The people currently in power, whom the [FE1:Rebels] attempt to overthrow. > The currently-existing system of authority or government.
+
+Output:
+Frame: Восстание
+Core FEs: Мятежник > Текущий лидер > Текущий порядок
+Frame Definition: Индивид или группа индивидов ([FE1:Мятежник]) отвергает [FE2:Текущего_лидера] с тем, чтобы лишить его власти. Вместо выражения восстания против [FE2:Текущего_лидера], слова данного фрейма могут выражать восстание против [FE3:Текущего_порядка] - правил, которые отвергает [FE1:Мятежник].
+Core FEs definitions: Индивид или группа индивидов, которая восстаёт против [FE2:Текущего_лидера] или против [FE3:Текущего_порядка] > Люди у власти, которых пытается свергнуть [FE1:Мятежник] > Существующая в настоящий момент система правил, против которой восстаёт [FE1:Мятежник]
+Labeled example: [FE1:Мятежник Матросы] [Frame:Восстание бунтовали] [FE2:Текущий_лидер против командиров].
+
+
+Input:
+LUs: появляться > показываться > виднеться
+LUs Definitions: - > - > А1 виднеется ‘Объект А1, находящийся на относительно большом расстоянии от наблюдателя в месте А2,  не очень отчетливо или частично виден наблюдателю’.  1. Расширенные употребления применительно к объектам,  бо́льшая часть которых скрыта другим объектом: Из-под пальто виднелась юбка; Его китель с петлицами [...] был расстегнут на выпуклом животе, и виднелась вязанная малиновая  жилетка (В. Пелевин). 2. Образные употребления применительно к названиям чувств:  В его взгляде, пронизывающем и холодном, виднелось что-то  вроде презрения (В. Короленко).
+Example: Впереди виднелись какие-то строения.
+FN Name: Becoming_visible
+FN Core FEs: Entity
+FN Definition: An [FE1:Entity] that is previously not visible to a Perceiver becomes visible.
+FN Core FEs definitions: The thing that the Perceiver is able to see or recognize.
+
+Output:
+Frame: Появление в поле зрения
+Core FEs: Объект
+Frame Definition: [FE1:Объект], который был невидимым, появляется в поле зрения.
+Core FEs definitions: То, что появляется в поле зрения
+Labeled example: Впереди [Frame:Появление_в_поле_зрения виднелись] [FE1:Объект какие-то строения].
+
+
+Input:
+LUs: бить > хлестать > ранить
+LUs Definitions: А1 бьет А2 по А3 за А5 ‘Резким и сильным движением многократно ударять существо А2 по части тела А3  объектом или частью тела А4 так, чтобы причинить А2 боль  или нанести А2 физический ущерб, иногда в наказание за поступок А5’.  1. Расширенные употребления применительно к ситуациям,  когда человека ударяют какой-то частью тела (обычно головой) о стационарный объект: бить кого-л. головой об стол. 2. Образные употребления: Жизнь его крепко била; Как ни  била ее судьба, бабушка оставалась болтливой (А. Варламов);  Когда добро бьет зло – это прекрасно. Когда зло бьет добро –  это ужасно, но естественно (В. Попов). > - > -
+Example: Старик бил парня по голове.
+FN Name: Cause_harm
+FN Core FEs: Agent > Victim > Body_part > Cause
+FN Definition: The words in this frame describe situations in which an [FE1:Agent] or a [FE4:Cause] injures a [FE2:Victim]. The [FE3:Body_part] of the [FE2:Victim] which is most directly affected may also be mentioned in place of the [FE2:Victim]. In such cases, the [FE2:Victim] is often indicated as a genitive modifier of the [FE3:Body_part], in which case the [FE2:Victim] FE is indicated on a second FE layer.
+FN Core FEs definitions: [FE1:Agent] is the person causing the [FE2:Victim]'s injury. > The [FE2:Victim] is the being or entity that is injured. If the [FE2:Victim] is included in the phrase indicating [FE3:Body_part], the [FE2:Victim] FE is tagged on a second FE layer. > The [FE3:Body_part] identifies the location on the body where the bodily injury takes place. > The [FE4:Cause] marks expressions that indicate some non-intentional, typically non-human, force that inflicts harm on the [FE2:Victim]
+
+Output:
+Frame: Причинение вреда
+Core FEs: Агенс > Каузатор > Жертва > Часть тела
+Frame Definition: [FE1:Агенс] или [FE2:Каузатор] наносит вред [FE3:Жертве]. Вместо [FE3:Жертвы] или вместе с [FE3:Жертвой] может быть упомянута [FE4:Часть_тела] [FE3:Жертвы], которая пострадала наиболее непосредственно.
+Core FEs definitions: Индивид, причиняющий вред [FE3:Жертве] > неагентивная, обычно нечеловеческая сила, причиняющая вред [FE3:Жертве] > Индивид, которому был нанесён вред > Место на теле [FE3:Жертвы], которой непосредственно был причинён вред
+Labeled example: [FE1:Агенс Старик] [Frame:Причинение_вреда бил] [FE3:Жертва парня] [FE4:Часть_тела по голове].
+
+
+Input:
+LUs: вставлять > вешать > класть
+LUs Definitions: А1 вставил А2 в А3 ‘Человек А1 сделал так, что  предмет А2 начал находиться в отверстии А3, в пространстве  внутри предмета А3 или в пространстве между предметами  А3, обычно плотно прилегая к А3’. > А1 вешает А2 на А3 ‘Человек А1 прикрепляет  объект А2 при помощи А4 к вертикальной поверхности А3  так, что объект А2 висит на поверхности А3’.  1. Вешать трубку [о телефоне] значит ‘окончив разговор,  положить трубку на рычаг или в гнездо телефонного аппарата’ [раньше телефонный аппарат прикреплялся к стене, так  что трубка, помещенная на рычаг, находилась в висячем состоянии]. 2. Сдвинутые употребления применительно к ситуациям, когда одежда, постельное белье и т. п. помещается на веревку  или другой вытянутый объект так, что его части свисают с  обеих сторон этого объекта: вешать белье на веревку; вешать  брюки на спинку стула; вешать ковер на забор. > -
+Example: Дети уже начали вешать на елку игрушки.
+FN Name: Placing
+FN Core FEs: Agent > Theme > Goal > Cause
+FN Definition: Generally without overall (translational) motion, an [FE1:Agent] places a [FE2:Theme] at a location, the [FE3:Goal], which is profiled. In this frame, the [FE2:Theme] is under the control of the [FE1:Agent]/[FE4:Cause] at the time of its arrival at the [FE3:Goal].
+FN Core FEs definitions: [FE1:Agent] is the person (or other force) that causes the [FE2:Theme] to move. > The [FE2:Theme] is the object that changes location during the Placing. > The [FE3:Goal] is the location where the [FE2:Theme] ends up. This FE is profiled by words in this frame. > [FE4:Cause] marks the expressions that indicate some non-intentional or intentional force apart from the [FE1:Agent] that aids in the action.
+
+Output:
+Frame: Размещение
+Core FEs: Агенс > Каузатор > Объект > Конечная точка
+Frame Definition: [FE1:Агенс] или [FE2:Каузатор] помещает [FE3:Объект] в [FE4:Конечную_точку]. [FE3:Объект] находится под контролем [FE1:Агенса]/[FE2:Каузатора] до попадания в [FE4:Конечную_точку].
+Core FEs definitions: Индивид, размещающий [FE3:Объект] > Неагентивная, обычно нечеловеческая сила, которая осуществляет размещение [FE3:Объекта] > То, что меняет местоположение во время размещения [FE1:Агенсом] или [FE2:Каузатором] > Место, в которое размещается [FE3:Объект]
+Labeled example: [FE1:Агенс Дети] уже начали [Frame:Размещение вешать] [FE4:Конечная_точка на елку] [FE3:Объект игрушки].
+
+
+Input:
+LUs: вытирать > высушить
+LUs Definitions: А1 вытер А2 с помощью А3 ‘Человек А1 провел – обычно несколько раз – объектом А3 по поверхности  мокрого или грязного объекта А2 или объектом А2 по объекту  А3, чтобы удалить с А2 влагу или грязь’. > -
+Example: Девочка вытерла лицо рукавом.
+FN Name: Cause_to_be_dry
+FN Core FEs: Agent > Dryee > Cause
+FN Definition: An [FE1:Agent] causes a [FE2:Dryee] (either a surface or an entire entity, inside and out) to become dry. This should not include examples like "drying tears" or "drying spills" as these are in the Removing frame.
+FN Core FEs definitions: [FE1:Agent] is the person performing the intentional act causing the [FE2:Dryee] to become dry. > The [FE2:Dryee] is the entity which has the water removed from it. > [FE3:Cause]: An animate or inanimate entity, a force, or event that produces the state of dryness. Volitionality is not a necessary characteristic of [FE3:Cause]s.
+
+Output:
+Frame: Осушение
+Core FEs: Агенс > Каузатор > Объект
+Frame Definition: [FE1:Агенс] или [FE2:Каузатор]делает так, чтобы [FE3:Объект] стал сухим.
+Core FEs definitions: Индивид, совершающий действие, в результате которого [FE3:Объект] становится сухим > Неагентивная, обычно нечеловеческая сила, которая делает [FE3:Объект] сухим > То, что становится сухим в результате воздействия [FE1:Агенса] или [FE2:Каузатора]
+Labeled example: [FE1:Агенс Девочка] [Frame:Осушение вытерла] [FE3:Объект лицо] рукавом.

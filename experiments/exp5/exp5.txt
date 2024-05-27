@@ -1,0 +1,168 @@
+Input:
+LU: взять
+Example: Секретарь взял со стола подписанные бумаги.
+FN Name: Taking
+FN Core FEs: Agent > Theme > Source
+FN Definition: An [FE1:Agent] removes a [FE2:Theme] from a [FE3:Source] so that it is in the [FE1:Agent]'s possession.
+FN Core FEs definitions: [FE1:Agent]: The person who takes possession of the [FE2:Theme]. > [FE2:Theme]: The object that the [FE1:Agent] takes possession of. > [FE3:Source]: The location of the [FE2:Theme] prior to the taking.
+FN Labeled example: [FE1:Agent Milton] [Frame:Taking took] [FE2:Theme the can of beer] [FE3:Source out of the refrigerator].
+
+Output:
+Frame: Взятие
+Core FEs: Агент > Объект > Источник
+Frame Definition: [FE1:Агент] перемещает [FE2:Объект] из [FE3:Источника], чтобы объект оказался в его владении.
+Core FEs definitions: Лицо, перемещающее объект в своё владение > То, что перемещается агентом > Место, где находился объект до перемещения
+Labeled example: [FE1:Агент Секретарь] [Frame:Взятие взял] [FE2:Объект подписанные бумаги] [FE3:Источник со стола].
+
+
+Input:
+LU: велеть
+Example: Она велела детям разогреть ужин.
+FN Name: Request
+FN Core FEs: Speaker > Addressee > Message > Medium
+FN Definition: In this frame, a [FE1:Speaker] asks a [FE2:Addressee] for something, or to carry out some action.
+FN Core FEs definitions: [FE1:Speaker]: The speaker, as in other communication frames, is generally an External Argument. > [FE2:Addressee]: In this frame, the addressee can either occur as an NP Object (usually with a following complement clause) or as a PP Complement of verbs or nouns. > [FE3:Message]: The content of the request that can be expressed as a quote, in a finite or non-finite clausal Complement, an NP Object, or PP Complement. > [FE4:Medium]: The physical entity or channel used to transmit the [FE3:Message]. The [FE4:Medium] is frequently expressed as a PP Complement headed by "on" or "in".
+FN Labeled example: [FE1:Speaker The customer] [Frame:Request demanded] [FE3:Message a refund].
+
+Output:
+Frame: Приказ
+Core FEs: Приказчик > Подчинённый > Задание
+Frame Definition: [FE1:Приказчик] даёт указание [FE2:Подчинённому] выполнить [FE3:Задание].
+Core FEs definitions: Лицо, выдающее указания > Лицо, которому даны указания > Содержание указания, которое должно быть выполнено
+Labeled example: [FE1:Приказчик Она] [Frame:Приказ велела] [FE2:Подчинённым детям] [FE3:Задание разогреть ужин].
+
+
+Input:
+LU: браться
+Example: После долгого перерыва он снова взялся за диссертацию.
+FN Name: Activity_start
+FN Core FEs: Activity > Agent
+FN Definition: An [FE2:Agent] initiates the beginning of an ongoing [FE1:Activity] in which he will be continuously involved.
+FN Core FEs definitions: [FE1:Activity]: This FE identifies the activity that an [FE2:Agent] starts. > [FE2:Agent]: This FE identifies the being that starts the intentional [FE1:Activity].
+FN Labeled example: At the same time, [FE2:Agent city-states] [Frame:Activity_start began] [FE1:Activity to grow in influence] on the southern Greek mainland.
+
+Output:
+Frame: Начало деятельности
+Core FEs: Агент > Деятельность
+Frame Definition: [FE1:Агент] начинает [FE2:Деятельность], в которой он будет непрерывно участвовать.
+Core FEs definitions: Существо, инициирующее начало [FE2:Деятельности] > Процесс или задача, в которую вовлечен [FE1:Агент]
+Labeled example: После долгого перерыва он снова [Frame:Начало_деятельности взялся] за [FE2:Деятельность диссертацию].
+
+
+Input:
+LU: вымыть
+Example: Чик вымыл руки, делая вид, что сильно озабочен их чистотой.
+FN Name: Grooming
+FN Core FEs: Agent > Patient > Body_part
+FN Definition: In this frame, an [FE1:Agent] engages in personal body care by grooming either a [FE2:Patient] or a [FE3:Body_part]. An Instrument can be used in this process as well as a Medium.
+FN Core FEs definitions: [FE1:Agent]: The agent is the person who does the grooming. > [FE2:Patient]: The patient is the person who gets washed. > [FE3:Body_part]: This is the region of the body that gets groomed.
+FN Labeled example: [FE1:Agent She] [Frame:Grooming washed] [FE2:Patient the baby].
+
+Output:
+Frame: Уход за телом
+Core FEs: Агенс > Пациент > Часть тела
+Frame Definition: [FE1:Агенс] занимается уходом за телом, ухаживая за [FE2:Пациентом] или [FE3:Частью тела].
+Core FEs definitions: Индивид, который выполняет уход > Лицо, за которым осуществляется уход > Регион тела, который подвергается уходу
+Labeled example: [FE1:Агенс Чик] [Frame:Уход_за_телом вымыл] [FE3:Часть тела руки], делая вид, что сильно озабочен их чистотой.
+
+
+Input:
+LU: вынуть
+Example: Мальчик вынул книги из портфеля.
+FN Name: Removing
+FN Core FEs: Agent > Theme > Source > Cause
+FN Definition: An [FE1:Agent] causes a [FE2:Theme] to move away from a location, the [FE3:Source]. The [FE3:Source] is profiled by the words in this frame, just as the Goal is profiled in the Placing frame.
+FN Core FEs definitions: [FE1:Agent]: The person (or other force) that causes the [FE2:Theme] to move. > [FE2:Theme]: The object that changes location. > [FE3:Source]: The initial location of the [FE2:Theme], before it changes location. > [FE4:Cause]: The non-Agentive cause of the removing event.
+FN Labeled example: [FE1:Agent Several men in dark suits] [Frame:Removing removed] [FE2:Theme all of the evidence] [FE3:Source from the scene].
+
+Output:
+Frame: Извлечение
+Core FEs: Агенс > Объект > Источник
+Frame Definition: [FE1:Агенс] перемещает [FE2:Объект] из [FE3:Источника].
+Core FEs definitions: Индивид, осуществляющий перемещение [FE2:Объекта] > То, что перемещается из одного места в другое > Место, из которого перемещается [FE2:Объект]
+Labeled example: [FE1:Агенс Мальчик] [Frame:Извлечение вынул] [FE2:Объект книги] [FE3:Источник из портфеля].
+
+
+Input:
+LU: вырабатывать
+Example: Фабрика вырабатывает товары широкого потребления.
+FN Name: Manufacturing
+FN Core FEs: Producer > Product > Factory
+FN Definition: A [FE1:Producer] produces a [FE2:Product] from a Resource for commercial purposes.
+FN Core FEs definitions: [FE1:Producer]: The person or company that produces the product. > [FE2:Product]: The product that is produced by the [FE1:Producer]. > [FE3:Factory]: Identifies the particular plant where the [FE2:Product] is manufactured.
+FN Labeled example: [FE1:Producer They] [Frame:Manufacturing produced] [FE2:Product only half of the units] under circumstances following an injunction to comply with environmental policy.
+
+Output:
+Frame: Производство
+Core FEs: Производитель > Продукт > Завод
+Frame Definition: [FE1:Производитель] создаёт [FE2:Продукт] в [FE3:Заводе] для коммерческих целей.
+Core FEs definitions: Лицо или компания, которая производит продукт > Товар, который производится [FE1:Производителем] > Место, где [FE2:Продукт] изготавливается
+Labeled example: [FE1:Производитель Фабрика] [Frame:Производство вырабатывает] [FE2:Продукт товары широкого потребления].
+
+
+Input:
+LU: вырезать
+Example: В 1915 году турки вырезали целые армянские селения.
+FN Name: Killing
+FN Core FEs: Killer > Victim > Cause > Means > Instrument
+FN Definition: A [FE1:Killer] or [FE3:Cause] causes the death of the [FE2:Victim].
+FN Core FEs definitions: [FE1:Killer]: The person or sentient entity that causes the death of the [FE2:Victim]. > [FE2:Victim]: The living entity that dies as a result of the killing. > [FE3:Cause]: An inanimate entity or process that causes the death of the [FE2:Victim]. > [FE4:Means]: The method or action that the [FE1:Killer] or [FE3:Cause] performs resulting in the death of the [FE2:Victim]. > [FE5:Instrument]: The device used by the [FE1:Killer] to bring about the death of the [FE2:Victim].
+FN Labeled example: [FE1:Killer John] [Frame:Killing drowned] [FE2:Victim Martha].
+
+Output:
+Frame: Убийство
+Core FEs: Убийца > Жертва > Средство
+Frame Definition: [FE1:Убийца] или [FE3:Средство] причиняет смерть [FE2:Жертве].
+Core FEs definitions: Лицо или существо, причиняющее смерть [FE2:Жертве] > Существо, которое умирает в результате убийства > Метод или действие, которое [FE1:Убийца] или [FE3:Средство] выполняет, ведущее к смерти [FE2:Жертвы]
+Labeled example: В 1915 году [FE1:Убийца турки] [Frame:Убийство вырезали] [FE2:Жертва целые армянские селения].
+
+
+Input:
+LU: достичь
+Example: Я надеюсь, что мы достигнем договоренности.
+FN Name: Accomplishment
+FN Core FEs: Agent > Goal
+FN Definition: After a period in which the [FE1:Agent] has been working on a [FE2:Goal], the [FE1:Agent] manages to attain it. The [FE2:Goal] may be a desired state, or be conceptualized as an event.
+FN Core FEs definitions: [FE1:Agent]: The conscious entity, generally a person, that performs the intentional act that fulfills the [FE2:Goal]. > [FE2:Goal]: The state or action that the [FE1:Agent] has wished to participate in.
+FN Labeled example: [FE1:Agent Jeremey] [Frame:Accomplishment accomplished] [FE2:Goal this task].
+
+Output:
+Frame: Достижение
+Core FEs: Агент > Цель
+Frame Definition: [FE1:Агент] после периода усилий достигает [FE2:Цели], которая может быть желаемым состоянием или событием.
+Core FEs definitions: Сознательное существо, обычно человек, выполняющее намеренные действия для достижения [FE2:Цели] > Состояние или действие, которое [FE1:Агент] стремился реализовать
+Labeled example: [FE1:Агент Я] надеюсь, что мы [Frame:Достижение достигнем] [FE2:Цель договоренности].
+
+
+Input:
+LU: разбить
+Example: Горничная споткнулась и разбила тарелку на мелкие кусочки.
+FN Name: Cause_to_fragment
+FN Core FEs: Agent > Whole_patient > Pieces > Cause
+FN Definition: An [FE1:Agent] suddenly and often violently separates the [FE2:Whole_patient] into two or more smaller [FE3:Pieces], resulting in the [FE2:Whole_patient] no longer existing as such. Several lexical items are marked with the semantic type Negative, which indicates that the fragmentation is necessarily judged as injurious to the original [FE2:Whole_patient].
+FN Core FEs definitions: [FE1:Agent]: The conscious entity, generally a person, that performs the intentional action that results in the [FE2:Whole_patient] being broken into [FE3:Pieces]. > [FE2:Whole_patient]: The entity which is destroyed by the [FE1:Agent] and that ends up broken into [FE3:Pieces]. > [FE3:Pieces]: The fragments of the [FE2:Whole_patient] that result from the [FE1:Agent]'s action. > [FE4:Cause]: An event which leads to the fragmentation of the [FE2:Whole_patient].
+FN Labeled example: [FE1:Agent He] [Frame:Cause_to_fragment ripped up] [FE2:Whole_patient the letter] faster than you can say "Jack Robbins".
+
+Output:
+Frame: Разрушение
+Core FEs: Агенс > Целое > Фрагменты > Каузатор
+Frame Definition: [FE1:Агенс] внезапно и часто насильственно разделяет [FE2:Целое] на две или более меньших [FE3:Фрагменты], в результате чего [FE2:Целое] перестаёт существовать как таковое.
+Core FEs definitions: Сознательное существо, обычно человек, выполняющее намеренное действие, в результате которого [FE2:Целое] разбивается на [FE3:Фрагменты] > Объект, который уничтожается [FE1:Агенсом] и который в итоге разбивается на [FE3:Фрагменты] > Фрагменты [FE2:Целого], возникающие в результате действий [FE1:Агенса] > Событие, приводящее к разрушению [FE2:Целого]
+Labeled example: [FE1:Агенс Горничная] споткнулась и [Frame:Разрушение разбила] [FE2:Целое тарелку] на [FE3:Фрагменты мелкие кусочки].
+
+
+Input:
+LU: атаковать
+Example: В Добрудже противник превосходными силами атаковал наши части по всему фронту.
+FN Name: Attack
+FN Core FEs: Victim > Assailant
+FN Definition: An [FE2:Assailant] physically attacks a [FE1:Victim] (which is usually but not always sentient), causing or intending to cause the [FE1:Victim] physical damage. A Weapon used by the [FE2:Assailant] may also be mentioned, in addition to the usual Place, Time, Purpose, Explanation, etc. Sometimes a location is used metonymically to stand for the [FE2:Assailant] or the [FE1:Victim], and in such cases, the Place FE will be annotated on a second FE layer.
+FN Core FEs definitions: [FE1:Victim]: This FE is the being or entity that is injured by the [FE2:Assailant]'s attack. > [FE2:Assailant]: The person (or other self-directed entity) that is attempting physical harm to the [FE1:Victim].
+FN Labeled example: As soon as he stepped out of the bar, [FE1:Victim he] was [Frame:Attack set upon] [FE2:Assailant by four men in ski-masks].
+
+Output:
+Frame: Нападение
+Core FEs: Нападающий > Жертва
+Frame Definition: [FE1:Нападающий] физически нападает на [FE2:Жертву], причиняя или намереваясь причинить физический вред [FE2:Жертве].
+Core FEs definitions: Лицо или другая самостоятельно действующая сущность, пытающаяся причинить физический вред [FE2:Жертве] > Существо или объект, который получает ущерб от действий [FE1:Нападающего]
+Labeled example: В Добрудже [FE1:Нападающий противник] превосходными силами [Frame:Нападение атаковал] [FE2:Жертва наши части] по всему фронту.

@@ -1,0 +1,168 @@
+Input:
+LUs: забрать > взять > схватить
+LUs Definitions: А1 забрал А2 у А3 ‘Человек А1 взял у человека  А3 объект А2, который A3 держал в руках или имел при себе,  обычно для того, чтобы А3 перестал иметь при себе А2, причем А3 оставался пассивен – не оказывал сопротивления А1,  но и не оказывал содействия А1’.   1.  Метонимические  употребления  применительно  к  слову  рука в роли А1: Вдруг чья-то рука решительно забрала у нее  поводья (Г. Николаева). 2. Забрать сближается с взять. Различие между ними состоит в степени активности А3 или же в характере цели: забрать  указывает  на  пассивность  человека  А3  и  предполагает,  что  цель А1 – сделать так, чтобы человек А3 перестал иметь при  себе  А2.  Взять  допускает  отсутствие  обоих  этих  компонентов: Он взял у сестры из рук котенка и стал его гладить [возможно, сестра сама протянула ему котенка] и Он забрал у сестры из рук котенка и стал его гладить [сестра не совершала  никаких действий]; Возьми у Вани его ранец [возможно, для  того, чтобы положить туда что-то] и Забери у Вани его ранец  [чтобы Ваня не нес его] > А1 берет А2 ‘Существо А1 начинает держать объект А2 или его часть А3 руками или другой частью тела А4’. > -
+Example: Секретарь взял со стола подписанные бумаги.
+FN Name: Taking
+FN Core FEs: Agent > Theme > Source
+FN Definition: An [FE1:Agent] removes a [FE2:Theme] from a [FE3:Source] so that it is in the [FE1:Agent]'s possession.
+FN Core FEs definitions: [FE1:Agent]: The person who takes possession of the [FE2:Theme]. > [FE2:Theme]: The object that the [FE1:Agent] takes possession of. > [FE3:Source]: The location of the [FE2:Theme] prior to the taking.
+
+Output:
+Frame: Взятие
+Core FEs: Агенс > Объект > Источник
+Frame Definition: [FE1:Агенс] забирает [FE2:Объект] у [FE3:Источника], чтобы [FE2:Объект] перестал находиться во владении [FE3:Источника].
+Core FEs definitions: Человек, который берет во владение [FE2:Объект] > Объект, который забирается [FE1:Агенсом] > Место или человек, у которого [FE1:Агенс] забирает [FE2:Объект]
+Labeled example: [FE1:Агенс Секретарь] [Frame:Взятие взял] [FE3:Источник со стола] [FE2:Объект подписанные бумаги].
+
+
+Input:
+LUs: умолять > велеть > требовать > просить
+LUs Definitions: - > А1 велит А2 человеку А3 ‘Имея право или власть  говорить человеку А3, что он должен сделать, человек А1  говорит человеку А3, что тот должен сделать А2’ [А1 и А3  обычно связаны неформальными отношениями].  Ослабленные употребления в значении ‘сказать’: – Обсыхай  быстрее, – велел ему дядя Федя (Р. Погодин). > - > -
+Example: Она велела детям разогреть ужин.
+FN Name: Request
+FN Core FEs: Speaker > Addressee > Message > Medium
+FN Definition: In this frame, a [FE1:Speaker] asks a [FE2:Addressee] for something, or to carry out some action.
+FN Core FEs definitions: [FE1:Speaker]: The speaker, as in other communication frames, is generally an External Argument. > [FE2:Addressee]: In this frame, the addressee can either occur as an NP Object (usually with a following complement clause) or as a PP Complement of verbs or nouns. > [FE3:Message]: The content of the request that can be expressed as a quote, in a finite or non-finite clausal Complement, an NP Object, or PP Complement. > [FE4:Medium]: The physical entity or channel used to transmit the [FE3:Message]. The [FE4:Medium] is frequently expressed as a PP Complement headed by "on" or "in".
+
+Output:
+Frame: Запрос
+Core FEs: Говорящий > Адресат > Сообщение
+Frame Definition: [FE1:Говорящий] просит [FE2:Адресата] что-то сделать или выполнить какое-либо действие.
+Core FEs definitions: Лицо, выражающее запрос > Лицо, которому адресован запрос > Содержание запроса, которое может быть выражено в виде прямой речи, в конечном или не конечном придаточном предложении, как объектное дополнение или дополнение с предлогом
+Labeled example: [FE1:Говорящий Она] [Frame:Запрос велела] [FE2:Адресат детям] [FE3:Сообщение разогреть ужин].
+
+
+Input:
+LUs: браться > начинать > приступать
+LUs Definitions: А1 берется за А2 ‘Человек А1 начинает заниматься деятельностью А2 или выполнять действие А2’.  1.  Метонимические  употребления  применительно  к  объектам, с которыми производятся соответствующие действия:  взяться за статью; Вы знаете, как положено на фронте, сначала помогают легкораненым, а уж потом берутся за тяжелораненых (Л. Дурнов). 2. Метонимические употребления применительно к объектам,  при  помощи  которых  производятся  соответствующие  действия: браться за ложку [‘начинать есть’]; браться за книгу  [‘начинать читать’]. 3. Образные употребления: браться за перо [‘начинать писать  художественное произведение или письмо’]; браться за кисть  [‘начинать писать красками картину’]. > - > -
+Example: После долгого перерыва он снова взялся за диссертацию.
+FN Name: Activity_start
+FN Core FEs: Activity > Agent
+FN Definition: An [FE2:Agent] initiates the beginning of an ongoing [FE1:Activity] in which he will be continuously involved.
+FN Core FEs definitions: [FE1:Activity]: This FE identifies the activity that an [FE2:Agent] starts. > [FE2:Agent]: This FE identifies the being that starts the intentional [FE1:Activity].
+
+Output:
+Frame: Начало действия
+Core FEs: Агенс > Деятельность
+Frame Definition: [FE1:Агенс] начинает заниматься [FE2:Деятельностью].
+Core FEs definitions: Индивид, который начинает выполнять [FE2:Деятельность] > Действие или процесс, в котором участвует [FE1:Агенс]
+Labeled example: После долгого перерыва [FE1:Агенс он] снова [Frame:Начало_действия взялся] [FE2:Деятельность за диссертацию].
+
+
+Input:
+LUs: брить > вымыть > стричь > бриться
+LUs Definitions: А1 бреет А2 с помощью А3 ‘Водя по поверхности  тела человека А2 или по части А2 тела человека специальным  инструментом А3, человек А1 срезает у основания растущие  на ней волосы, так что кожа становится гладкой’. > - > - > ‘Брить свое лицо и шею инструментом А2’.
+Example: Чик вымыл руки, делая вид, что сильно озабочен их чистотой.
+FN Name: Grooming
+FN Core FEs: Agent > Patient > Body_part
+FN Definition: In this frame, an [FE1:Agent] engages in personal body care by grooming either a [FE2:Patient] or a [FE3:Body_part]. An Instrument can be used in this process as well as a Medium.
+FN Core FEs definitions: [FE1:Agent]: The agent is the person who does the grooming. > [FE2:Patient]: The patient is the person who gets washed. > [FE3:Body_part]: This is the region of the body that gets groomed.
+
+Output:
+Frame: Уход за собой
+Core FEs: Агенс > Пациент > Часть тела
+Frame Definition: [FE1:Агенс] занимается уходом за собой или за [FE2:Пациентом], ухаживая за [FE3:Частью_тела]. В процессе может использоваться Инструмент или Средство.
+Core FEs definitions: Человек, выполняющий уход > Человек, за которым ухаживают > Регион тела, который подвергается уходу
+Labeled example: [FE1:Агенс Чик] [Frame:Уход_за_собой вымыл] [FE3:Часть_тела руки], делая вид, что сильно озабочен их чистотой.
+
+
+Input:
+LUs: вынуть > вытащить > удалить
+LUs Definitions: А1 вынул А2 из А3 ‘Человек А1, взяв объект А2,  находившийся внутри объекта А3 или в небольшом замкнутом  пространстве А3, сделал так, что А2 перестал находиться в А3,  с целью приготовить А2 или А3 к использованию’.  Расширенные употребления применительно к частям А2  тела человека А1: вынуть руку из кармана <из-за пазухи>,  вынуть палец <ногу> из воды. > А1 вытащил А2 из А3 ‘Человек А1, взяв объект  А2 в небольшом замкнутом пространстве А3, переместил его  наружу’.  Образные употребления применительно к нематериальным  объектам в роли А2, которые как бы вынимают, чтобы они  были видны или чтобы их использовать, особенно в сочетаниях вытащить на свет (божий), вытащить наружу <напоказ>: вытащить на свет грязное белье <компромат>, вытащить откуда-то старую идею; Для того чтобы вытащить  из человека то, что он показывать не хочет или не может,  нужно нечто большее («Известия», 2002.09.27); Вытащить  из человека наружу его сокровенную мечту – вот в чем задача  (К. Паустовский). > -
+Example: Мальчик вынул книги из портфеля.
+FN Name: Removing
+FN Core FEs: Agent > Theme > Source > Cause
+FN Definition: An [FE1:Agent] causes a [FE2:Theme] to move away from a location, the [FE3:Source]. The [FE3:Source] is profiled by the words in this frame, just as the Goal is profiled in the Placing frame.
+FN Core FEs definitions: [FE1:Agent]: The person (or other force) that causes the [FE2:Theme] to move. > [FE2:Theme]: The object that changes location. > [FE3:Source]: The initial location of the [FE2:Theme], before it changes location. > [FE4:Cause]: The non-Agentive cause of the removing event.
+
+Output:
+Frame: Извлечение
+Core FEs: Агенс > Объект > Источник
+Frame Definition: [FE1:Агенс] перемещает [FE2:Объект] из [FE3:Источника].
+Core FEs definitions: Индивид, вызывающий перемещение [FE2:Объекта] > То, что перемещается из одного места в другое > Место, из которого извлекается [FE2:Объект]
+Labeled example: [FE1:Агенс Мальчик] [Frame:Извлечение вынул] [FE2:Объект книги] [FE3:Источник из портфеля].
+
+
+Input:
+LUs: вырабатывать > производить > выпускать
+LUs Definitions: А1 выработал А2 из А3 ‘Человек, предприятие  или автономно функционирующий механизм А1, сделав что-то с объектом А3, произвели из него объект А2’. > - > А1 выпустил А2 ‘Промышленное предприятие А1  произвело предназначенные для продажи изделия А2’.  Метонимические употребления применительно к людям,  работающим на предприятии А1: Коллектив завода <фабрики, цеха> ежегодно выпускает несколько тонн кондитерских  изделий.
+Example: Фабрика вырабатывает товары широкого потребления.
+FN Name: Manufacturing
+FN Core FEs: Producer > Product > Factory
+FN Definition: A [FE1:Producer] produces a [FE2:Product] from a Resource for commercial purposes.
+FN Core FEs definitions: [FE1:Producer]: The person or company that produces the product. > [FE2:Product]: The product that is produced by the [FE1:Producer]. > [FE3:Factory]: Identifies the particular plant where the [FE2:Product] is manufactured.
+
+Output:
+Frame: Производство
+Core FEs: Производитель > Продукт > Завод
+Frame Definition: [FE1:Производитель] производит [FE2:Продукт] из ресурса для коммерческих целей.
+Core FEs definitions: Лицо или компания, производящая [FE2:Продукт] > Изделие, которое производится [FE1:Производителем] > Место, где производится [FE2:Продукт]
+Labeled example: [FE1:Производитель Фабрика] [Frame:Производство вырабатывает] [FE2:Продукт товары широкого потребления].
+
+
+Input:
+LUs: вырезать > утопить > убить
+LUs Definitions: - > - > -
+Example: В 1915 году турки вырезали целые армянские селения.
+FN Name: Killing
+FN Core FEs: Killer > Victim > Cause > Means > Instrument
+FN Definition: A [FE1:Killer] or [FE3:Cause] causes the death of the [FE2:Victim].
+FN Core FEs definitions: [FE1:Killer]: The person or sentient entity that causes the death of the [FE2:Victim]. > [FE2:Victim]: The living entity that dies as a result of the killing. > [FE3:Cause]: An inanimate entity or process that causes the death of the [FE2:Victim]. > [FE4:Means]: The method or action that the [FE1:Killer] or [FE3:Cause] performs resulting in the death of the [FE2:Victim]. > [FE5:Instrument]: The device used by the [FE1:Killer] to bring about the death of the [FE2:Victim].
+
+Output:
+Frame: Убийство
+Core FEs: Убийца > Жертва
+Frame Definition: [FE1:Убийца] или [FE3:Причина] причиняет смерть [FE2:Жертве].
+Core FEs definitions: Лицо или существо, причиняющее смерть [FE2:Жертве] > Существо, которое умирает в результате убийства > Неодушевленный объект или процесс, причиняющий смерть [FE2:Жертве]
+Labeled example: [В 1915 году] [FE1:Убийца турки] [Frame:Убийство вырезали] [FE2:Жертва целые армянские селения].
+
+
+Input:
+LUs: добиться > достичь
+LUs Definitions: А1 добился А2 ‘Упорно и долго делая А3 для достижения своей цели А2, человек А1 достиг А2’.   1.  Метонимические  употребления  применительно  к  таким  объектам  в  роли  А2,  которые  являются  символами  желательного положения дел: Третий – и тоже очень хороший дом – был у предводителя, добивавшегося Анны на шею  (А. Ф.  Писемский);  А  между  тем  сколько  из  них  считают  себя  вправе  добиваться  чинов,  отличий,  власти  –  и  добиваются! (А. В. Никитенко). 2. Иронические употребления, часто в вопросительных предложениях,  предполагающие  уверенность  говорящего  в  том,  что А1 ничего не добился: Посетителей до ворот проводили  охранники. – Ну, и чего ты этим добился? – спросил Сунков,  когда они выехали из элитного академического поселка (Е. Козырева); Правительство добилось того, что оборот остался  на крайне ограниченном уровне (Д. Викторов). > -
+Example: Я надеюсь, что мы достигнем договоренности.
+FN Name: Accomplishment
+FN Core FEs: Agent > Goal
+FN Definition: After a period in which the [FE1:Agent] has been working on a [FE2:Goal], the [FE1:Agent] manages to attain it. The [FE2:Goal] may be a desired state, or be conceptualized as an event.
+FN Core FEs definitions: [FE1:Agent]: The conscious entity, generally a person, that performs the intentional act that fulfills the [FE2:Goal]. > [FE2:Goal]: The state or action that the [FE1:Agent] has wished to participate in.
+
+Output:
+Frame: Достижение
+Core FEs: Агенс > Цель
+Frame Definition: [FE1:Агенс] упорно и долго работает, чтобы достичь [FE2:Цели].
+Core FEs definitions: Сознательное существо, обычно человек, выполняющее целенаправленные действия для достижения [FE2:Цели] > Состояние или действие, которое [FE1:Агенс] стремится реализовать.
+Labeled example: [FE1:Агенс мы] надеюсь, что [Frame:Достижение достигнем] [FE2:Цель договоренности].
+
+
+Input:
+LUs: разбить > разорвать > разрезать
+LUs Definitions: - > - > -
+Example: Горничная споткнулась и разбила тарелку на мелкие кусочки.
+FN Name: Cause_to_fragment
+FN Core FEs: Agent > Whole_patient > Pieces > Cause
+FN Definition: An [FE1:Agent] suddenly and often violently separates the [FE2:Whole_patient] into two or more smaller [FE3:Pieces], resulting in the [FE2:Whole_patient] no longer existing as such. Several lexical items are marked with the semantic type Negative, which indicates that the fragmentation is necessarily judged as injurious to the original [FE2:Whole_patient].
+FN Core FEs definitions: [FE1:Agent]: The conscious entity, generally a person, that performs the intentional action that results in the [FE2:Whole_patient] being broken into [FE3:Pieces]. > [FE2:Whole_patient]: The entity which is destroyed by the [FE1:Agent] and that ends up broken into [FE3:Pieces]. > [FE3:Pieces]: The fragments of the [FE2:Whole_patient] that result from the [FE1:Agent]'s action. > [FE4:Cause]: An event which leads to the fragmentation of the [FE2:Whole_patient].
+
+Output:
+Frame: Разрушение
+Core FEs: Агенс > Жертва > Части
+Frame Definition: [FE1:Агенс] внезапно и часто насильственно разделяет [FE2:Целое] на две или более меньших [FE3:Части], в результате чего [FE2:Целое] больше не существует как таковое.
+Core FEs definitions: Сознательное существо, обычно человек, выполняющее намеренное действие, которое приводит к тому, что [FE2:Целое] разбивается на [FE3:Части] > Объект, который разрушается [FE1:Агенсом] и который в итоге разбивается на [FE3:Части] > Фрагменты [FE2:Целого], которые являются результатом действий [FE1:Агенса]
+Labeled example: [FE1:Агенс Горничная] споткнулась и [Frame:Разрушение разбила] [FE2:Жертва тарелку] [FE3:Части на мелкие кусочки].
+
+
+Input:
+LUs: атаковать > бомбардировать > штурмовать
+LUs Definitions: А1 атакует А2 ‘В ходе военных действий вооруженная  группа  людей  А1,  быстро  и  неожиданно  войдя  в контакт с противником А2 или принадлежащим ему пространственным объектом А2, совершает энергичные действия  с целью причинить А2 как можно больший физический ущерб  или захватить А2’.  1. Расширенные употребления применительно к боевым  машинам в роли А1: У входа в порт крейсер атаковали вражеские самолеты. 2. Образные употребления: Родители продолжают атаковать  школу, и каждая, даже самая малая весточка, полученная о  невидимках, для нас очень важна (М. Сергеев). > А1  бомбардирует  А2  ‘Люди  или  военная  техника А1 при помощи устройства А4 обстреливает объект А2  крупными снарядами или ракетами А3 или сбрасывает на А2  бомбы с воздуха’ [А1 часто в форме МН].  Образные употребления: А дворники дедовским способом  ухали снег с крыш, бомбардировали тротуары (В. Аксенов). > -
+Example: В Добрудже противник превосходными силами атаковал наши части по всему фронту.
+FN Name: Attack
+FN Core FEs: Victim > Assailant
+FN Definition: An [FE2:Assailant] physically attacks a [FE1:Victim] (which is usually but not always sentient), causing or intending to cause the [FE1:Victim] physical damage. A Weapon used by the [FE2:Assailant] may also be mentioned, in addition to the usual Place, Time, Purpose, Explanation, etc. Sometimes a location is used metonymically to stand for the [FE2:Assailant] or the [FE1:Victim], and in such cases, the Place FE will be annotated on a second FE layer.
+FN Core FEs definitions: [FE1:Victim]: This FE is the being or entity that is injured by the [FE2:Assailant]'s attack. > [FE2:Assailant]: The person (or other self-directed entity) that is attempting physical harm to the [FE1:Victim].
+
+Output:
+Frame: Атака
+Core FEs: Атакующий > Жертва
+Frame Definition: [FE1:Атакующий] физически нападает на [FE2:Жертву], причиняя или намереваясь причинить [FE2:Жертве] физический ущерб. Возможно упоминание Оружия, используемого [FE1:Атакующим], а также места, времени, цели, объяснения и т.д. Иногда место может использоваться метонимически для обозначения [FE1:Атакующего] или [FE2:Жертвы], и в таких случаях место будет аннотировано на втором уровне FE.
+Core FEs definitions: Существо или объект, который получает ущерб от нападения [FE1:Атакующего] > Лицо (или другая самоуправляемая сущность), пытающееся причинить физический вред [FE2:Жертве]
+Labeled example: В Добрудже [FE1:Атакующий противник] превосходными силами [Frame:Атака атаковал] [FE2:Жертва наши части] по всему фронту.

@@ -1,0 +1,148 @@
+Input:
+LU: взять
+Example: Секретарь взял со стола подписанные бумаги.
+FN Name: Taking
+FN Core FEs: Agent > Theme > Source
+FN Labeled example: [FE1:Agent Milton] [Frame:Taking took] [FE2:Theme the can of beer] [FE3:Source out of the refrigerator].
+
+Output:
+Frame: Взятие
+Core FEs: Агенс > Объект > Источник
+Frame Definition: [FE1:Агенс] берёт [FE2:Объект] из [FE3:Источника].
+Core FEs definitions: Индивид, который совершает действие взятия > То, что берёт [FE1:Агенс] > Место, откуда берётся [FE2:Объект]
+Labeled example: [FE1:Агенс Секретарь] [Frame:Взятие взял] [FE2:Объект подписанные бумаги] [FE3:Источник со стола].
+
+
+Input:
+LU: велеть
+Example: Она велела детям разогреть ужин.
+FN Name: Request
+FN Core FEs: Speaker > Addressee > Message > Medium
+FN Labeled example: [FE1:Speaker The customer] [Frame:Request demanded] [FE3:Message a refund].
+
+Output:
+Frame: Приказ
+Core FEs: Приказчик > Получатель приказа > Содержание приказа
+Frame Definition: [FE1:Приказчик] даёт указание [FE2:Получателю_приказа] выполнить [FE3:Содержание_приказа].
+Core FEs definitions: Лицо, выдающее указания > Лицо или группа лиц, которым адресованы указания > То, что должно быть выполнено в соответствии с указаниями [FE1:Приказчика]
+Labeled example: [FE1:Приказчик Она] [Frame:Приказ велела] [FE2:Получатель_приказа детям] [FE3:Содержание_приказа разогреть ужин].
+
+
+Input:
+LU: браться
+Example: После долгого перерыва он снова взялся за диссертацию.
+FN Name: Activity_start
+FN Core FEs: Activity > Agent
+FN Labeled example: At the same time, [FE2:Agent city-states] [Frame:Activity_start began] [FE1:Activity to grow in influence] on the southern Greek mainland.
+
+Output:
+Frame: Начало деятельности
+Core FEs: Агент > Деятельность
+Frame Definition: [FE1:Агент] начинает заниматься [FE2:Деятельностью], которая была прервана или отложена.
+Core FEs definitions: Индивид, который начинает или возобновляет деятельность > То, чем занимается или собирается заняться [FE1:Агент]
+Labeled example: После долгого перерыва [FE1:Агент он] снова [Frame:Начало_деятельности взялся] [FE2:Деятельность за диссертацию].
+
+
+Input:
+LU: вымыть
+Example: Чик вымыл руки, делая вид, что сильно озабочен их чистотой.
+FN Name: Grooming
+FN Core FEs: Agent > Patient > Body_part
+FN Labeled example: [FE1:Agent She] [Frame:Grooming washed] [FE2:Patient the baby].
+
+Output:
+Frame: Уход за собой
+Core FEs: Агенс > Объект > Часть тела
+Frame Definition: [FE1:Агенс] очищает [FE3:Часть_тела] [FE2:Объекта], чтобы поддерживать гигиену или внешний вид.
+Core FEs definitions: Индивид, выполняющий действия по уходу за [FE2:Объектом] > То или тот, кто подвергается уходу > Часть тела [FE2:Объекта], которая очищается
+Labeled example: [FE1:Агенс Чик] [Frame:Уход_за_собой вымыл] [FE3:Часть_тела руки], делая вид, что сильно озабочен их чистотой.
+
+
+Input:
+LU: вынуть
+Example: Мальчик вынул книги из портфеля.
+FN Name: Removing
+FN Core FEs: Agent > Theme > Source > Cause
+FN Labeled example: [FE1:Agent Several men in dark suits] [Frame:Removing removed] [FE2:Theme all of the evidence] [FE3:Source from the scene].
+
+Output:
+Frame: Извлечение
+Core FEs: Агенс > Объект > Источник
+Frame Definition: [FE1:Агенс] извлекает [FE2:Объект] из [FE3:Источника].
+Core FEs definitions: Индивид, который осуществляет действие извлечения > То, что извлекается из [FE3:Источника] > Место или контейнер, из которого извлекается [FE2:Объект]
+Labeled example: [FE1:Агенс Мальчик] [Frame:Извлечение вынул] [FE2:Объект книги] [FE3:Источник из портфеля].
+
+
+Input:
+LU: вырабатывать
+Example: Фабрика вырабатывает товары широкого потребления.
+FN Name: Manufacturing
+FN Core FEs: Producer > Product > Factory
+FN Labeled example: [FE1:Producer They] [Frame:Manufacturing produced] [FE2:Product only half of the units] under circumstances following an injunction to comply with environmental policy.
+
+Output:
+Frame: Производство
+Core FEs: Производитель > Продукт
+Frame Definition: [FE1:Производитель] создаёт [FE2:Продукт], который предназначен для использования или потребления.
+Core FEs definitions: Субъект или организация, занимающаяся созданием [FE2:Продукта] > Товары или услуги, которые создаются [FE1:Производителем]
+Labeled example: [FE1:Производитель Фабрика] [Frame:Производство вырабатывает] [FE2:Продукт товары широкого потребления].
+
+
+Input:
+LU: вырезать
+Example: В 1915 году турки вырезали целые армянские селения.
+FN Name: Killing
+FN Core FEs: Killer > Victim > Cause > Means > Instrument
+FN Labeled example: [FE1:Killer John] [Frame:Killing drowned] [FE2:Victim Martha].
+
+Output:
+Frame: Массовое уничтожение
+Core FEs: Исполнитель > Жертва
+Frame Definition: [FE1:Исполнитель] полностью уничтожает [FE2:Жертву], обычно в контексте насильственных действий.
+Core FEs definitions: Лицо или группа лиц, осуществляющая уничтожение > Группа людей или сообщество, которое подвергается уничтожению
+Labeled example: В 1915 году [FE1:Исполнитель турки] [Frame:Массовое_уничтожение вырезали] [FE2:Жертва целые армянские селения].
+
+
+Input:
+LU: достичь
+Example: Я надеюсь, что мы достигнем договоренности.
+FN Name: Accomplishment
+FN Core FEs: Agent > Goal
+FN Labeled example: [FE1:Agent Jeremey] [Frame:Accomplishment accomplished] [FE2:Goal this task].
+
+Output:
+Frame: Достижение
+Core FEs: Достижущий > Цель
+Frame Definition: [FE1:Достижущий] прилагает усилия или стремится к тому, чтобы [FE2:Цель] была выполнена или достигнута.
+Core FEs definitions: Лицо или группа лиц, которые стремятся к выполнению или достижению чего-либо > То, что должно быть выполнено или достигнуто в результате усилий [FE1:Достижущего]
+Labeled example: [FE1:Достижущий Я] надеюсь, что мы [Frame:Достижение достигнем] [FE2:Цель договоренности].
+
+
+Input:
+LU: разбить
+Example: Горничная споткнулась и разбила тарелку на мелкие кусочки.
+FN Name: Cause_to_fragment
+FN Core FEs: Agent > Whole_patient > Pieces > Cause
+FN Labeled example: [FE1:Agent He] [Frame:Cause_to_fragment ripped up] [FE2:Whole_patient the letter] faster than you can say "Jack Robbins".
+
+Output:
+Frame: Разрушение
+Core FEs: Агенс > Целое > Части
+Frame Definition: [FE1:Агенс] приводит к тому, что [FE2:Целое] распадается на [FE3:Части].
+Core FEs definitions: Индивид, действия которого приводят к разрушению [FE2:Целого] > Объект, который изначально был целым и подвергся разрушению > Фрагменты, на которые распалось [FE2:Целое] после действий [FE1:Агенса]
+Labeled example: [FE1:Агенс Горничная] споткнулась и [Frame:Разрушение разбила] [FE2:Целое тарелку] на [FE3:Части мелкие кусочки].
+
+
+Input:
+LU: атаковать
+Example: В Добрудже противник превосходными силами атаковал наши части по всему фронту.
+FN Name: Attack
+FN Core FEs: Victim > Assailant
+FN Labeled example: As soon as he stepped out of the bar, [FE1:Victim he] was [Frame:Attack set upon] [FE2:Assailant by four men in ski-masks].
+
+Output:
+Frame: Нападение
+Core FEs: Нападающий > Жертва
+Frame Definition: [FE1:Нападающий] осуществляет агрессивные действия против [FE2:Жертвы], стремясь причинить вред или захватить контроль.
+Core FEs definitions: Субъект, который инициирует агрессивные действия > Субъект или объект, который подвергается агрессии
+Labeled example: В Добрудже [FE1:Нападающий противник превосходными силами] [Frame:Нападение атаковал] [FE2:Жертва наши части] по всему фронту.
